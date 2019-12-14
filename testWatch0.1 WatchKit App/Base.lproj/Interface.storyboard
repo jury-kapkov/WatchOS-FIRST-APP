@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="testWatch0_1_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="35" alignment="left" text="MQ" textAlignment="center" id="3FY-KB-M7O">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="1" height="32" alignment="left" title="START" id="lpO-eY-LB2">
+                            <connections>
+                                <segue destination="I4d-Qa-MFa" kind="push" id="4GD-1E-0kb"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="33" alignment="left" title="SETTINGS" id="2gf-Nh-GtC">
+                            <connections>
+                                <segue destination="JtF-LO-jze" kind="push" id="era-WX-Xsm"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="36" alignment="left" verticalAlignment="bottom" alpha="0.55000000000000004" text="made by yourchick" textAlignment="center" id="Xuk-UW-csj">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="118" y="73"/>
+        </scene>
+        <!--Settings Interface Controller-->
+        <scene sceneID="CzA-Zf-QaL">
+            <objects>
+                <controller id="JtF-LO-jze" customClass="SettingsInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="29" alignment="left" text="Language:" textAlignment="left" id="qCc-Fv-vzV">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <picker height="39" alignment="left" id="ZnQ-HE-OCi"/>
+                        <label width="1" height="26" alignment="left" text="Button color:" textAlignment="left" id="ee4-ID-xOt">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <picker height="38" alignment="left" id="9Hu-ps-5rb"/>
+                    </items>
+                    <connections>
+                        <outlet property="colorPicker" destination="9Hu-ps-5rb" id="f3v-JU-b7s"/>
+                        <outlet property="languagePicker" destination="ZnQ-HE-OCi" id="BuA-Pp-QN1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="118" y="471"/>
+        </scene>
+        <!--Menu Level Interface Controller-->
+        <scene sceneID="ifF-So-NfV">
+            <objects>
+                <controller id="I4d-Qa-MFa" customClass="MenuLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="35" alignment="left" text="MQ" textAlignment="center" id="B2v-pJ-m7y">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="1" height="32" alignment="left" title="EASY" id="tce-Lc-Jgp">
+                            <connections>
+                                <segue destination="Maz-pU-fOa" kind="push" id="xt0-CC-ppn"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="33" alignment="left" title="MIDDLE" id="OWV-hC-hVn"/>
+                        <label width="1" height="36" alignment="left" verticalAlignment="bottom" alpha="0.55000000000000004" text="made by yourchick" textAlignment="center" id="WdO-OS-B0y">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="73"/>
+        </scene>
+        <!--Easy Level Interface Controller-->
+        <scene sceneID="JQh-fG-3WS">
+            <objects>
+                <controller id="Maz-pU-fOa" customClass="EasyLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="59" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="cf7-gC-6Ii">
+                            <fontDescription key="font" type="system" pointSize="26"/>
+                        </label>
+                        <group width="1" alignment="left" id="JH7-XA-o7x">
+                            <items>
+                                <button width="0.45000000000000001" alignment="left" title="YES" id="MyH-Wf-MfY"/>
+                                <button width="0.45000000000000001" alignment="right" title="NO" id="bnV-aG-dPu"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="UAn-cf-UR2">
+                            <items>
+                                <label width="1" height="36" alignment="left" verticalAlignment="bottom" text="score: 0" textAlignment="center" id="VWk-iI-JxA">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="EasyTask" destination="cf7-gC-6Ii" id="MDy-GS-M84"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="706" y="75"/>
+        </scene>
+    </scenes>
+</document>
