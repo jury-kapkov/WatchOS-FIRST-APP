@@ -92,7 +92,7 @@
                             <items>
                                 <button width="0.45000000000000001" alignment="left" title="YES" id="MyH-Wf-MfY">
                                     <connections>
-                                        <action selector="OnYesClick" destination="Maz-pU-fOa" id="4RQ-pO-nRI"/>
+                                        <action selector="OnYesClick" destination="Maz-pU-fOa" id="qxU-7W-iyW"/>
                                     </connections>
                                 </button>
                                 <button width="0.45000000000000001" alignment="right" title="NO" id="bnV-aG-dPu">
@@ -116,7 +116,36 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="706" y="75"/>
+            <point key="canvasLocation" x="734" y="-41"/>
+        </scene>
+        <!--EndScreen-->
+        <scene sceneID="7i9-at-pDn">
+            <objects>
+                <controller identifier="EndScreen" id="byf-Tc-VoU" customClass="EndEasyGameInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="54" alignment="left" text="Your score: 0" textAlignment="center" numberOfLines="2" id="V3d-Wj-eX0">
+                            <color key="textColor" red="0.37722126122709865" green="1" blue="0.46438592873300621" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <label width="136" height="48" alignment="left" text="Best score: 0" textAlignment="center" numberOfLines="2" id="agd-hV-yp8">
+                            <color key="textColor" red="1" green="0.79670929949345126" blue="0.42341122665303166" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <group width="1" alignment="left" id="lkl-q6-7wa">
+                            <items>
+                                <button width="0.45000000000000001" height="39" alignment="left" verticalAlignment="bottom" id="ctg-QD-2YN"/>
+                                <button width="0.45000000000000001" alignment="right" id="5wL-Kn-7Lh"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="CurrentScore" destination="V3d-Wj-eX0" id="8R6-qd-PSp"/>
+                        <outlet property="HomeButton" destination="5wL-Kn-7Lh" id="GWF-tF-z8g"/>
+                        <outlet property="ReplayButton" destination="ctg-QD-2YN" id="sgB-nh-S6q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1025" y="-51"/>
         </scene>
     </scenes>
 </document>
