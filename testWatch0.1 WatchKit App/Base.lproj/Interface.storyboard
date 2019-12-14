@@ -90,8 +90,16 @@
                         </label>
                         <group width="1" alignment="left" id="JH7-XA-o7x">
                             <items>
-                                <button width="0.45000000000000001" alignment="left" title="YES" id="MyH-Wf-MfY"/>
-                                <button width="0.45000000000000001" alignment="right" title="NO" id="bnV-aG-dPu"/>
+                                <button width="0.45000000000000001" alignment="left" title="YES" id="MyH-Wf-MfY">
+                                    <connections>
+                                        <action selector="OnYesClick" destination="Maz-pU-fOa" id="4RQ-pO-nRI"/>
+                                    </connections>
+                                </button>
+                                <button width="0.45000000000000001" alignment="right" title="NO" id="bnV-aG-dPu">
+                                    <connections>
+                                        <action selector="OnNoCLick" destination="Maz-pU-fOa" id="BCF-jC-RLG"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="UAn-cf-UR2">
@@ -103,6 +111,7 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="EasyScore" destination="VWk-iI-JxA" id="nZk-io-Gya"/>
                         <outlet property="EasyTask" destination="cf7-gC-6Ii" id="MDy-GS-M84"/>
                     </connections>
                 </controller>

@@ -16,20 +16,19 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        let score: Int
-        
-        guard let path = Bundle.main.path(forResource: "Storage", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
-                return
-        }
-        
-        do {
-            let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
-            score = json["bestEasyScore"] as! Int
-            
-        } catch let error as NSError {
-            print(error)
-        }
+//        var score: Int = 0
+//        guard let path = Bundle.main.path(forResource: "Storage", ofType: "json"),
+//            let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+//                return
+//        }
+//        
+//        do {
+//            let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+//            score = json["bestEasyScore"] as! Int
+//            
+//        } catch let error as NSError {
+//            print(error)
+//        }
     }
 
     override func willActivate() {

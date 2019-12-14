@@ -19,9 +19,9 @@ class Level: NSObject {
         self.mode = mode
         switch mode {
         case 1:
-            task = ""
-            result = 1
-            answerEasy = false
+            let levelGenerator = LevelGenerator()
+            task = levelGenerator.GenerateEasyLevel()
+            answerEasy = levelGenerator.easyResult
         case 2:
             task = ""
             result = 1
@@ -31,8 +31,8 @@ class Level: NSObject {
         }
     }
     
-    func CheckLevel(value: Double) -> Bool {
-        if (result == value) {
+    func CheckEasyLevel(value: Bool) -> Bool {
+        if (answerEasy == value) {
             return true
         }
         else

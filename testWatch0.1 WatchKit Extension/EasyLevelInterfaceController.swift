@@ -11,16 +11,45 @@ import Foundation
 
 
 class EasyLevelInterfaceController: WKInterfaceController {
-
+    
+    var level: Level = Level(mode: 1)
+    static var score: Int = 0
     
     @IBOutlet weak var EasyTask: WKInterfaceLabel!
+    @IBOutlet weak var EasyScore: WKInterfaceLabel!
+    
+    @IBAction func OnNoCLick() {
+        if (!level.answerEasy){
+            EasyLevelInterfaceController.score += 1
+            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
+        }
+        else{
+            EasyLevelInterfaceController.score = 0
+            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
+        }
+        level = Level(mode: 1)
+        EasyTask.setText(level.task)
+        super.willActivate()
+    }
+    @IBAction func OnYesClick() {
+        if (level.answerEasy){
+            EasyLevelInterfaceController.score += 1
+            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
+        }
+        else{
+            EasyLevelInterfaceController.score = 0
+            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
+        }
+        level = Level(mode: 1)
+        EasyTask.setText(level.task)
+        super.willActivate()
+    }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        let levelGenerator = LevelGenerator()
-        var task = levelGenerator.GenerateLevel()
-        EasyTask.setText(task)
+        level = Level(mode: 1)
+        EasyTask.setText(level.task)
     }
 
     override func willActivate() {

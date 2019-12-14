@@ -17,6 +17,8 @@ class LevelGenerator	 {
     var secondOperand: Int = 0
     var result: Double = 0
     
+    var easyResult: Bool = false
+    
     func GenerateEasyLevel() -> String {
         let indexOfOperator = Int.random(in: 0...2)
         currentOperator = operators[indexOfOperator]
@@ -26,9 +28,15 @@ class LevelGenerator	 {
         
         CalculateResult(firstOperand: firstOperand, secondOperand: secondOperand)
         
+        var resultString = ""
+        easyResult = Bool.random()
         
-        
-        var resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result))"
+        if easyResult {
+            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result))"
+        }
+        else {
+            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result) - Int.random(in: 1...4))"
+        }
         
         return resultString
     }
