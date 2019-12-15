@@ -32,10 +32,10 @@ class LevelGenerator	 {
         easyResult = Bool.random()
         
         if easyResult {
-            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result))"
+            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result))?"
         }
         else {
-            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result) - Int.random(in: 1...4))"
+            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result) - Int.random(in: 1...4))?"
         }
         
         return resultString

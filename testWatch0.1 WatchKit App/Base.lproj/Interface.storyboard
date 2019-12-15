@@ -116,26 +116,57 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="733.95652173913038" y="-41.741071428571431"/>
+            <point key="canvasLocation" x="696" y="73"/>
         </scene>
         <!--EndScreen-->
         <scene sceneID="7i9-at-pDn">
             <objects>
                 <controller identifier="EndScreen" id="byf-Tc-VoU" customClass="EndEasyGameInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
                     <items>
-                        <label width="1" height="65" alignment="left" text="Your score: 0" textAlignment="center" numberOfLines="2" id="V3d-Wj-eX0">
+                        <label width="1" height="26" alignment="left" text="Your score: 0" textAlignment="center" id="V3d-Wj-eX0">
                             <color key="textColor" red="0.37722126122709865" green="1" blue="0.46438592873300621" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                            <variation key="device=watch38mm">
+                                <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                            </variation>
+                            <variation key="device=watch40mm" numberOfLines="2"/>
+                            <variation key="device=watch42mm" height="45"/>
                         </label>
-                        <label width="1" height="36" alignment="left" text="Best score: 0" textAlignment="center" numberOfLines="2" id="agd-hV-yp8">
+                        <label width="1" height="33" alignment="left" text="Best score: 0" textAlignment="center" numberOfLines="2" id="agd-hV-yp8">
                             <color key="textColor" red="1" green="0.79670929949345126" blue="0.42341122665303166" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>
-                        <group width="1" alignment="left" id="lkl-q6-7wa">
+                        <group width="1" height="77" alignment="left" id="lkl-q6-7wa">
                             <items>
-                                <button width="0.45000000000000001" height="39" alignment="left" verticalAlignment="bottom" id="ctg-QD-2YN"/>
-                                <button width="0.45000000000000001" alignment="right" id="5wL-Kn-7Lh"/>
+                                <button width="0.45000000000000001" height="0.90000000000000002" alignment="left" verticalAlignment="bottom" title="🎮" id="ctg-QD-2YN">
+                                    <color key="backgroundColor" red="0.12792749719547847" green="0.73635848445595853" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="42"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="30"/>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="36"/>
+                                    </variation>
+                                    <connections>
+                                        <segue destination="Maz-pU-fOa" kind="push" id="Z14-gd-A1O"/>
+                                    </connections>
+                                </button>
+                                <button width="0.45000000000000001" height="0.90000000000000002" alignment="right" verticalAlignment="bottom" title="🏠" id="5wL-Kn-7Lh">
+                                    <color key="backgroundColor" red="1" green="0.67928768291640185" blue="0.12509504575941166" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="42"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" pointSize="30"/>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <fontDescription key="font" type="system" pointSize="36"/>
+                                    </variation>
+                                    <connections>
+                                        <segue destination="AgC-eL-Hgc" kind="push" id="uhP-Eg-1en"/>
+                                    </connections>
+                                </button>
                             </items>
+                            <variation key="device=watch38mm" height="62"/>
+                            <variation key="device=watch42mm" height="55"/>
                         </group>
                     </items>
                     <connections>
@@ -145,7 +176,10 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1025" y="-51"/>
+            <point key="canvasLocation" x="394" y="-309"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z14-gd-A1O"/>
+    </inferredMetricsTieBreakers>
 </document>
