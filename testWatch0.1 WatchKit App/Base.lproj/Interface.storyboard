@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -85,7 +85,7 @@
             <objects>
                 <controller id="Maz-pU-fOa" customClass="EasyLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
                     <items>
-                        <label width="1" height="59" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="cf7-gC-6Ii">
+                        <label width="1" height="74" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="cf7-gC-6Ii">
                             <fontDescription key="font" type="system" pointSize="26"/>
                         </label>
                         <group width="1" alignment="left" id="JH7-XA-o7x">
@@ -116,18 +116,18 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="734" y="-41"/>
+            <point key="canvasLocation" x="733.95652173913038" y="-41.741071428571431"/>
         </scene>
         <!--EndScreen-->
         <scene sceneID="7i9-at-pDn">
             <objects>
                 <controller identifier="EndScreen" id="byf-Tc-VoU" customClass="EndEasyGameInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
                     <items>
-                        <label width="136" height="54" alignment="left" text="Your score: 0" textAlignment="center" numberOfLines="2" id="V3d-Wj-eX0">
+                        <label width="1" height="65" alignment="left" text="Your score: 0" textAlignment="center" numberOfLines="2" id="V3d-Wj-eX0">
                             <color key="textColor" red="0.37722126122709865" green="1" blue="0.46438592873300621" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
-                        <label width="136" height="48" alignment="left" text="Best score: 0" textAlignment="center" numberOfLines="2" id="agd-hV-yp8">
+                        <label width="1" height="36" alignment="left" text="Best score: 0" textAlignment="center" numberOfLines="2" id="agd-hV-yp8">
                             <color key="textColor" red="1" green="0.79670929949345126" blue="0.42341122665303166" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                         </label>

@@ -24,6 +24,7 @@ class EasyLevelInterfaceController: WKInterfaceController {
             EasyScore.setText("score: \(score)")
         }
         else{
+            pushController(withName: "EndScreen", context: String(score))
             score = 0
             EasyScore.setText("score: \(score)")
         }
@@ -38,8 +39,7 @@ class EasyLevelInterfaceController: WKInterfaceController {
             EasyScore.setText("score: \(score)")
         }
         else{
-            let res:String = String(score)
-            pushController(withName: "EndScreen", context: res)
+            pushController(withName: "EndScreen", context: String(score))
             score = 0
             EasyScore.setText("score: \(score)")
         }
@@ -47,21 +47,6 @@ class EasyLevelInterfaceController: WKInterfaceController {
         EasyTask.setText(level.task)
         super.willActivate()
     }
-    //    @IBAction func OnYesClick() {
-//        pushController(withName: "EndScreen", context: nil)
-//        if (level.answerEasy){
-//            EasyLevelInterfaceController.score += 1
-//            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
-//        }
-//        else{
-//            EasyLevelInterfaceController.score = 0
-//            EasyScore.setText("score: \(EasyLevelInterfaceController.score)")
-//            self.pushController(withName: "EndEasyGameInterfaceController", context: nil)
-//        }
-//        level = Level(mode: 1)
-//        EasyTask.setText(level.task)
-//        super.willActivate()
-//    }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
