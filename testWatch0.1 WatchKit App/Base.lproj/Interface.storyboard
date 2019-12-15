@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch44" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -31,6 +29,10 @@
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="SettingsButton" destination="2gf-Nh-GtC" id="Xq4-oI-AjE"/>
+                        <outlet property="StartButton" destination="lpO-eY-LB2" id="eB9-7R-yM0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="118" y="73"/>
@@ -43,11 +45,19 @@
                         <label width="1" height="29" alignment="left" text="Language:" textAlignment="left" id="qCc-Fv-vzV">
                             <fontDescription key="font" type="system" pointSize="20"/>
                         </label>
-                        <picker height="39" alignment="left" id="ZnQ-HE-OCi"/>
+                        <picker height="39" alignment="left" id="ZnQ-HE-OCi">
+                            <connections>
+                                <action selector="pickerSelectedItemChangedWithValue:" destination="JtF-LO-jze" id="j3r-im-gfj"/>
+                            </connections>
+                        </picker>
                         <label width="1" height="26" alignment="left" text="Button color:" textAlignment="left" id="ee4-ID-xOt">
                             <fontDescription key="font" type="system" pointSize="20"/>
                         </label>
-                        <picker height="38" alignment="left" id="9Hu-ps-5rb"/>
+                        <picker height="38" alignment="left" id="9Hu-ps-5rb">
+                            <connections>
+                                <action selector="pickerSelectedItemChangedWithValue:" destination="JtF-LO-jze" id="0ad-n4-HE6"/>
+                            </connections>
+                        </picker>
                     </items>
                     <connections>
                         <outlet property="colorPicker" destination="9Hu-ps-5rb" id="f3v-JU-b7s"/>
@@ -180,6 +190,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Z14-gd-A1O"/>
+        <segue reference="xt0-CC-ppn"/>
     </inferredMetricsTieBreakers>
 </document>

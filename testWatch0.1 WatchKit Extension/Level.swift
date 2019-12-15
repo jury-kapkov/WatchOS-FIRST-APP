@@ -6,9 +6,9 @@
 //  Copyright © 2019 Admin. All rights reserved.
 //
 
-import WatchKit
+//import WatchKit
 
-class Level: NSObject {
+class Level {
     var result: Double = 0
     var task: String = ""
     var answersMiddle: [Double] = [-1, -1, -1, -1]
@@ -40,6 +40,5 @@ class Level: NSObject {
             return false
         }
     }
-    
     
 }

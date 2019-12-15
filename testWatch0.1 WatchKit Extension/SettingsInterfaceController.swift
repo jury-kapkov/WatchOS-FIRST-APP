@@ -12,6 +12,10 @@ import Foundation
 
 class SettingsInterfaceController: WKInterfaceController {
 
+    var mainColor: String = "Blue"
+    let titlesLang:[String] = ["English","Russion"]
+    let titlesColor:[String] = ["Blue","Yellow", "Green"]
+    
     @IBOutlet weak var languagePicker: WKInterfacePicker!
     @IBOutlet weak var colorPicker: WKInterfacePicker!
     
@@ -19,7 +23,7 @@ class SettingsInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         var pickerLangItems:[WKPickerItem] = []
-        let titlesLang:[String] = ["Eanglish","Russion"]
+        
         for item in titlesLang{
             let pickerItem = WKPickerItem()
             pickerItem.title = item
@@ -28,13 +32,17 @@ class SettingsInterfaceController: WKInterfaceController {
         languagePicker.setItems(pickerLangItems);
         
         var pickerColorItems:[WKPickerItem] = []
-        let titlesColor:[String] = ["Blue","Yellow", "Green"]
+        
         for item in titlesColor{
             let pickerItem = WKPickerItem()
             pickerItem.title = item
             pickerColorItems += [pickerItem]
         }
         colorPicker.setItems(pickerColorItems);
+    }
+    
+    @IBAction func pickerSelectedItemChanged(value: Int) {
+        mainColor = titlesColor[value]
     }
 
     override func willActivate() {
@@ -47,4 +55,5 @@ class SettingsInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    
 }

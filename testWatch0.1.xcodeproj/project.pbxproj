@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8409415923A3D036003E7547 /* LevelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409415823A3D036003E7547 /* LevelGenerator.swift */; };
-		8409415A23A3D036003E7547 /* LevelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409415823A3D036003E7547 /* LevelGenerator.swift */; };
 		844F9D2223337A01003A0498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D2123337A01003A0498 /* AppDelegate.swift */; };
 		844F9D2423337A01003A0498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D2323337A01003A0498 /* ViewController.swift */; };
 		844F9D2723337A01003A0498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F9D2523337A01003A0498 /* Main.storyboard */; };
@@ -20,19 +18,16 @@
 		844F9D4023337A04003A0498 /* testWatch0.1 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 844F9D3F23337A04003A0498 /* testWatch0.1 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		844F9D4723337A04003A0498 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D4623337A04003A0498 /* ExtensionDelegate.swift */; };
 		844F9D4923337A04003A0498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F9D4823337A04003A0498 /* Assets.xcassets */; };
-		844F9D592333B105003A0498 /* MenuLevelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D582333B105003A0498 /* MenuLevelInterfaceController.swift */; };
-		844F9D5B2333B1B4003A0498 /* EasyLevelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D5A2333B1B4003A0498 /* EasyLevelInterfaceController.swift */; };
-		844F9D5D2333B1DD003A0498 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D5C2333B1DD003A0498 /* SettingsInterfaceController.swift */; };
 		844F9D60233525A1003A0498 /* Storage.json in Resources */ = {isa = PBXBuildFile; fileRef = 844F9D5F233525A1003A0498 /* Storage.json */; };
 		844F9D61233525F2003A0498 /* Storage.json in Resources */ = {isa = PBXBuildFile; fileRef = 844F9D5F233525A1003A0498 /* Storage.json */; };
-		844F9D66233536B7003A0498 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D65233536B7003A0498 /* InterfaceController.swift */; };
-		844F9D67233536B7003A0498 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D65233536B7003A0498 /* InterfaceController.swift */; };
-		84B8776E23A53F8500A78E1F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8776D23A53F8500A78E1F /* Game.swift */; };
-		84B8776F23A53F8500A78E1F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8776D23A53F8500A78E1F /* Game.swift */; };
-		84B8777123A5425F00A78E1F /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777023A5425F00A78E1F /* Level.swift */; };
-		84B8777223A5425F00A78E1F /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777023A5425F00A78E1F /* Level.swift */; };
-		84B8777423A56B8000A78E1F /* EndEasyGameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */; };
-		84B8777523A56B8000A78E1F /* EndEasyGameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */; };
+		932B4D8523A68F2600239700 /* EasyLevelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D5A2333B1B4003A0498 /* EasyLevelInterfaceController.swift */; };
+		932B4D8623A68F2600239700 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777023A5425F00A78E1F /* Level.swift */; };
+		932B4D8723A68F2600239700 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D5C2333B1DD003A0498 /* SettingsInterfaceController.swift */; };
+		932B4D8823A68F2600239700 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D65233536B7003A0498 /* InterfaceController.swift */; };
+		932B4D8923A68F2600239700 /* LevelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409415823A3D036003E7547 /* LevelGenerator.swift */; };
+		932B4D8A23A68F2600239700 /* MenuLevelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F9D582333B105003A0498 /* MenuLevelInterfaceController.swift */; };
+		932B4D8B23A68F2600239700 /* EndEasyGameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */; };
+		932B4D8E23A68F3C00239700 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932B4D8D23A68F3B00239700 /* WatchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,9 +94,9 @@
 		844F9D5C2333B1DD003A0498 /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
 		844F9D5F233525A1003A0498 /* Storage.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = Storage.json; sourceTree = "<group>"; };
 		844F9D65233536B7003A0498 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		84B8776D23A53F8500A78E1F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		84B8777023A5425F00A78E1F /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndEasyGameInterfaceController.swift; sourceTree = "<group>"; };
+		932B4D8D23A68F3B00239700 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932B4D8E23A68F3C00239700 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +126,7 @@
 				844F9D3423337A03003A0498 /* testWatch0.1 WatchKit App */,
 				844F9D4323337A04003A0498 /* testWatch0.1 WatchKit Extension */,
 				844F9D1F23337A01003A0498 /* Products */,
+				932B4D8C23A68F3B00239700 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,14 +169,13 @@
 				844F9D4623337A04003A0498 /* ExtensionDelegate.swift */,
 				844F9D4823337A04003A0498 /* Assets.xcassets */,
 				844F9D4A23337A04003A0498 /* Info.plist */,
+				84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */,
+				844F9D65233536B7003A0498 /* InterfaceController.swift */,
 				844F9D582333B105003A0498 /* MenuLevelInterfaceController.swift */,
 				844F9D5C2333B1DD003A0498 /* SettingsInterfaceController.swift */,
-				844F9D65233536B7003A0498 /* InterfaceController.swift */,
 				8409415823A3D036003E7547 /* LevelGenerator.swift */,
 				844F9D5A2333B1B4003A0498 /* EasyLevelInterfaceController.swift */,
-				84B8776D23A53F8500A78E1F /* Game.swift */,
 				84B8777023A5425F00A78E1F /* Level.swift */,
-				84B8777323A56B8000A78E1F /* EndEasyGameInterfaceController.swift */,
 			);
 			path = "testWatch0.1 WatchKit Extension";
 			sourceTree = "<group>";
@@ -190,6 +186,14 @@
 				844F9D5F233525A1003A0498 /* Storage.json */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		932B4D8C23A68F3B00239700 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932B4D8D23A68F3B00239700 /* WatchKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,12 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B8777123A5425F00A78E1F /* Level.swift in Sources */,
-				84B8777423A56B8000A78E1F /* EndEasyGameInterfaceController.swift in Sources */,
-				844F9D66233536B7003A0498 /* InterfaceController.swift in Sources */,
-				84B8776E23A53F8500A78E1F /* Game.swift in Sources */,
 				844F9D2423337A01003A0498 /* ViewController.swift in Sources */,
-				8409415923A3D036003E7547 /* LevelGenerator.swift in Sources */,
 				844F9D2223337A01003A0498 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,15 +340,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844F9D67233536B7003A0498 /* InterfaceController.swift in Sources */,
-				844F9D5B2333B1B4003A0498 /* EasyLevelInterfaceController.swift in Sources */,
-				84B8777523A56B8000A78E1F /* EndEasyGameInterfaceController.swift in Sources */,
-				84B8776F23A53F8500A78E1F /* Game.swift in Sources */,
-				844F9D5D2333B1DD003A0498 /* SettingsInterfaceController.swift in Sources */,
-				844F9D592333B105003A0498 /* MenuLevelInterfaceController.swift in Sources */,
-				8409415A23A3D036003E7547 /* LevelGenerator.swift in Sources */,
-				84B8777223A5425F00A78E1F /* Level.swift in Sources */,
+				932B4D8823A68F2600239700 /* InterfaceController.swift in Sources */,
+				932B4D8623A68F2600239700 /* Level.swift in Sources */,
+				932B4D8523A68F2600239700 /* EasyLevelInterfaceController.swift in Sources */,
+				932B4D8723A68F2600239700 /* SettingsInterfaceController.swift in Sources */,
+				932B4D8923A68F2600239700 /* LevelGenerator.swift in Sources */,
+				932B4D8A23A68F2600239700 /* MenuLevelInterfaceController.swift in Sources */,
 				844F9D4723337A04003A0498 /* ExtensionDelegate.swift in Sources */,
+				932B4D8B23A68F2600239700 /* EndEasyGameInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -502,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -517,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				INFOPLIST_FILE = "testWatch0.1 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,7 +528,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Debug;
 		};
@@ -538,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				INFOPLIST_FILE = "testWatch0.1 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,7 +550,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Release;
 		};
@@ -561,6 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				IBSC_MODULE = testWatch0_1_WatchKit_Extension;
 				INFOPLIST_FILE = "testWatch0.1 WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,7 +576,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Debug;
 		};
@@ -586,6 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				IBSC_MODULE = testWatch0_1_WatchKit_Extension;
 				INFOPLIST_FILE = "testWatch0.1 WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,7 +601,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
 			};
 			name = Release;
 		};
@@ -608,7 +610,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				INFOPLIST_FILE = testWatch0.1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,7 +629,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6VA8P947;
 				INFOPLIST_FILE = testWatch0.1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
