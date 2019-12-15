@@ -65,7 +65,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="118" y="471"/>
+            <point key="canvasLocation" x="118" y="394"/>
         </scene>
         <!--Menu Level Interface Controller-->
         <scene sceneID="ifF-So-NfV">
@@ -80,7 +80,11 @@
                                 <segue destination="Maz-pU-fOa" kind="push" id="xt0-CC-ppn"/>
                             </connections>
                         </button>
-                        <button width="1" height="33" alignment="left" title="MIDDLE" id="OWV-hC-hVn"/>
+                        <button width="1" height="33" alignment="left" title="MIDDLE" id="OWV-hC-hVn">
+                            <connections>
+                                <segue destination="Vi9-vl-8iG" kind="push" id="qiS-RY-F33"/>
+                            </connections>
+                        </button>
                         <label width="1" height="36" alignment="left" verticalAlignment="bottom" alpha="0.55000000000000004" text="made by yourchick" textAlignment="center" id="WdO-OS-B0y">
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
@@ -126,7 +130,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="696" y="73"/>
+            <point key="canvasLocation" x="682" y="69"/>
         </scene>
         <!--EndScreen-->
         <scene sceneID="7i9-at-pDn">
@@ -187,6 +191,62 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="394" y="-309"/>
+        </scene>
+        <!--Middle Level Interface Controller-->
+        <scene sceneID="vkE-iC-4Xc">
+            <objects>
+                <controller id="Vi9-vl-8iG" customClass="MiddleLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="58" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="d45-kz-OBo">
+                            <fontDescription key="font" type="system" pointSize="26"/>
+                        </label>
+                        <group width="1" alignment="left" id="l8L-nC-UNt">
+                            <items>
+                                <button width="0.45000000000000001" alignment="left" title="1" id="bR8-Nw-ezS">
+                                    <connections>
+                                        <action selector="OnAClick" destination="Vi9-vl-8iG" id="E4A-Jv-kkX"/>
+                                    </connections>
+                                </button>
+                                <button width="0.45000000000000001" alignment="right" title="2" id="LsK-uC-CJr">
+                                    <connections>
+                                        <action selector="OnBClick" destination="Vi9-vl-8iG" id="aJQ-6t-QbD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="4hW-gt-VOI">
+                            <items>
+                                <button width="0.45000000000000001" alignment="left" title="3" id="T9C-De-sMa">
+                                    <connections>
+                                        <action selector="OnCClick" destination="Vi9-vl-8iG" id="eYF-D8-uv2"/>
+                                    </connections>
+                                </button>
+                                <button width="0.45000000000000001" alignment="right" title="4" id="UoZ-jN-UMM">
+                                    <connections>
+                                        <action selector="OnDClick" destination="Vi9-vl-8iG" id="c9D-7h-c3X"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="SFr-Gi-db3">
+                            <items>
+                                <label width="1" height="36" alignment="left" verticalAlignment="bottom" text="score: 0" textAlignment="center" id="7uh-4A-4I1">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="AnswerAButton" destination="bR8-Nw-ezS" id="ztG-Iw-yWI"/>
+                        <outlet property="AnswerBButton" destination="LsK-uC-CJr" id="39x-WT-jBB"/>
+                        <outlet property="AnswerCButton" destination="T9C-De-sMa" id="A0f-5W-ORg"/>
+                        <outlet property="AnswerDButton" destination="UoZ-jN-UMM" id="6ZK-Tl-uae"/>
+                        <outlet property="CurrentScore" destination="7uh-4A-4I1" id="ezD-yQ-mjp"/>
+                        <outlet property="TaskText" destination="d45-kz-OBo" id="iZh-Z7-V3w"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="395"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

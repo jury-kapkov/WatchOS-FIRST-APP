@@ -9,9 +9,9 @@
 //import WatchKit
 
 class Level {
-    var result: Double = 0
+    var result: Int = 0
     var task: String = ""
-    var answersMiddle: [Double] = [-1, -1, -1, -1]
+    var answersMiddle: [Int] = [-1, -1, -1, -1]
     var answerEasy: Bool = false
     var mode: Int = -1
     
@@ -23,9 +23,10 @@ class Level {
             task = levelGenerator.GenerateEasyLevel()
             answerEasy = levelGenerator.easyResult
         case 2:
-            task = ""
-            result = 1
-//            answersMiddle = 1
+            let levelGenerator = LevelGenerator()
+            task = levelGenerator.GenerateMiddleLevel()
+            answersMiddle = levelGenerator.GenerateAnswers()
+            result = levelGenerator.result
         default:
             return
         }

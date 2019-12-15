@@ -15,7 +15,9 @@ class LevelGenerator	 {
     
     var firstOperand: Int = 0
     var secondOperand: Int = 0
-    var result: Double = 0
+    var thirdOperand: Int = 0
+    
+    var result: Int = 0
     
     var easyResult: Bool = false
     
@@ -42,42 +44,55 @@ class LevelGenerator	 {
     }
     
     func GenerateMiddleLevel() -> String {
-        let indexOfOperator = Int.random(in: 0...operators.count)
-        currentOperator = operators[indexOfOperator]
+        let indexOf1Operator = Int.random(in: 0...2)
+        let indexOf2Operator = Int.random(in: 0...2)
         
-        firstOperand = Int.random(in: 1...10)
-        secondOperand = Int.random(in: 1...10)
         
-        CalculateResult(firstOperand: firstOperand, secondOperand: secondOperand)
+        firstOperand = Int.random(in: -20...20)
+        secondOperand = Int.random(in: 10...20)
+        thirdOperand = Int.random(in: -5...5)
         
-        var resultString = ""
-        if (currentOperator != "/") {
-            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(Int(result))"
+        if (indexOf2Operator == 2 && indexOf1Operator != 2) {
+            currentOperator = operators[indexOf2Operator]
+            CalculateResult(firstOperand: secondOperand, secondOperand: thirdOperand)
+                       
+            currentOperator = operators[indexOf1Operator]
+            CalculateResult(firstOperand: firstOperand, secondOperand: Int(result))
+           
+            var resultString = "\(firstOperand) \(operators[indexOf1Operator]) \(secondOperand) \(operators[indexOf2Operator]) \(thirdOperand) = ?"
+            return resultString
         }
         else{
-            resultString = "\(firstOperand) \(currentOperator) \(secondOperand) = \(NSString(format: "%.2f", result))"
+            currentOperator = operators[indexOf1Operator]
+            
+            CalculateResult(firstOperand: firstOperand, secondOperand: secondOperand)
+            
+            currentOperator = operators[indexOf2Operator]
+            CalculateResult(firstOperand: Int(result), secondOperand: thirdOperand)
+            
+            var resultString = "\(firstOperand) \(operators[indexOf1Operator]) \(secondOperand) \(operators[indexOf2Operator]) \(thirdOperand) = ?"
+            return resultString
         }
-        return resultString
     }
     
     func CalculateResult(firstOperand: Int, secondOperand: Int) {
         switch currentOperator {
-        case "+": result = Double(firstOperand + secondOperand)
-        case "-": result = Double(firstOperand - secondOperand)
-        case "*": result = Double(firstOperand * secondOperand)
-        case "/": result = Double(firstOperand) / Double(secondOperand)
+        case "+": result = firstOperand + secondOperand
+        case "-": result = firstOperand - secondOperand
+        case "*": result = firstOperand * secondOperand
+//        case "/": result = Double(firstOperand) / Double(secondOperand
         default: break
         }
     }
     
-    func GenerateAnswers() -> [Double] {
-        var Answers: [Double] = [-1, -1, -1, -1]
-        let randomDX = Int.random(in: 1...5)
+    func GenerateAnswers() -> [Int] {
+        var Answers: [Int] = [-1, -1, -1, -1]
+        let randomDX = Int.random(in: 2...4)
         
         Answers[0] = result
-        Answers[1] = Double(result - Double(randomDX))
-        Answers[2] = Double(result + Double(randomDX))
-        Answers[3] = Double(result * Double(randomDX))
+        Answers[1] = result - randomDX
+        Answers[2] = result + randomDX
+        Answers[3] = result * randomDX
         
         Answers.shuffle()
         
