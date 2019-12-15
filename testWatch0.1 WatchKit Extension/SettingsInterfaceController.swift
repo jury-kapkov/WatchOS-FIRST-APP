@@ -13,7 +13,7 @@ import Foundation
 class SettingsInterfaceController: WKInterfaceController {
 
     var mainColor: String = "Blue"
-    let titlesLang:[String] = ["English","Russion"]
+    let titlesLang:[String] = ["English","Russian"]
     let titlesColor:[String] = ["Blue","Yellow", "Green"]
     
     @IBOutlet weak var languagePicker: WKInterfacePicker!

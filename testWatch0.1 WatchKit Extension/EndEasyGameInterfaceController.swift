@@ -12,17 +12,22 @@ import Foundation
 
 class EndEasyGameInterfaceController: WKInterfaceController {
 
-    @IBOutlet weak var ReplayButton: WKInterfaceButton!
-    @IBOutlet weak var HomeButton: WKInterfaceButton!
+//    @IBOutlet weak var ReplayButton: WKInterfaceButton!
+//    @IBOutlet weak var HomeButton: WKInterfaceButton!
     
     @IBOutlet weak var CurrentScore: WKInterfaceLabel!
     
+    var gameMode:String = ""
+    var finalScore:String = ""
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        let text = "Your score " + ((context as? String)!)
+        gameMode = ((context as? [String])!)[1]
+        finalScore = ((context as? [String])!)[0]
+        
+        let text = "Your score " + finalScore
         CurrentScore.setText(text)
         
 //        HomeButton.setBackgroundImage(UIImage(named: "Complication/HomeButton"))
@@ -39,5 +44,20 @@ class EndEasyGameInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
+    @IBAction func ReplayButtonClick() {
+        switch gameMode {
+        case "1":
+            pushController(withName: "MiddleGame", context: nil)
+        case "0":
+        pushController(withName: "EasyGame", context: nil)
+        default:
+            break
+        }
+    }
+    
+    @IBAction func HomeButtonClick() {
+        pushController(withName: "HomeScreen", context: nil)
+    }
+    
 }

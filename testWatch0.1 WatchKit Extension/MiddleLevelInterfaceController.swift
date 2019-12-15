@@ -22,7 +22,7 @@ class MiddleLevelInterfaceController: WKInterfaceController {
     var level: Level = Level(mode: 2)
     var score: Int = 0
     var Answers: [Int] = [-1, -1, -1, -1]
-    
+    var sendContextArr: [String] = ["", "1"]
     
     @IBAction func OnAClick() {
         if (level.result == Answers[0]){
@@ -30,7 +30,8 @@ class MiddleLevelInterfaceController: WKInterfaceController {
             CurrentScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
+            sendContextArr[0] = String(score)
+            pushController(withName: "EndScreen", context: sendContextArr)
             score = 0
         }
         GenerateLevel()
@@ -43,8 +44,9 @@ class MiddleLevelInterfaceController: WKInterfaceController {
             CurrentScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
-            score = 0
+             sendContextArr[0] = String(score)
+             pushController(withName: "EndScreen", context: sendContextArr)
+             score = 0
         }
         GenerateLevel()
         super.willActivate()
@@ -56,7 +58,8 @@ class MiddleLevelInterfaceController: WKInterfaceController {
             CurrentScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
+            sendContextArr[0] = String(score)
+            pushController(withName: "EndScreen", context: sendContextArr)
             score = 0
         }
         GenerateLevel()
@@ -69,7 +72,8 @@ class MiddleLevelInterfaceController: WKInterfaceController {
             CurrentScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
+            sendContextArr[0] = String(score)
+            pushController(withName: "EndScreen", context: sendContextArr)
             score = 0
         }
         GenerateLevel()

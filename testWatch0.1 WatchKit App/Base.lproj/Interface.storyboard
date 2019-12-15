@@ -7,10 +7,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--HomeScreen-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="testWatch0_1_WatchKit_App" customModuleProvider="target">
+                <controller identifier="HomeScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="testWatch0_1_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label width="1" height="35" alignment="left" text="MQ" textAlignment="center" id="3FY-KB-M7O">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="414" y="73"/>
         </scene>
-        <!--Easy Level Interface Controller-->
+        <!--EasyGame-->
         <scene sceneID="JQh-fG-3WS">
             <objects>
-                <controller id="Maz-pU-fOa" customClass="EasyLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                <controller identifier="EasyGame" id="Maz-pU-fOa" customClass="EasyLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
                     <items>
                         <label width="1" height="74" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="cf7-gC-6Ii">
                             <fontDescription key="font" type="system" pointSize="26"/>
@@ -162,7 +162,7 @@
                                         <fontDescription key="font" type="system" pointSize="36"/>
                                     </variation>
                                     <connections>
-                                        <segue destination="Maz-pU-fOa" kind="push" id="Z14-gd-A1O"/>
+                                        <action selector="ReplayButtonClick" destination="byf-Tc-VoU" id="v8U-bS-PsS"/>
                                     </connections>
                                 </button>
                                 <button width="0.45000000000000001" height="0.90000000000000002" alignment="right" verticalAlignment="bottom" title="🏠" id="5wL-Kn-7Lh">
@@ -175,7 +175,7 @@
                                         <fontDescription key="font" type="system" pointSize="36"/>
                                     </variation>
                                     <connections>
-                                        <segue destination="AgC-eL-Hgc" kind="push" id="uhP-Eg-1en"/>
+                                        <action selector="HomeButtonClick" destination="byf-Tc-VoU" id="6mB-hb-Mu9"/>
                                     </connections>
                                 </button>
                             </items>
@@ -185,17 +185,15 @@
                     </items>
                     <connections>
                         <outlet property="CurrentScore" destination="V3d-Wj-eX0" id="8R6-qd-PSp"/>
-                        <outlet property="HomeButton" destination="5wL-Kn-7Lh" id="GWF-tF-z8g"/>
-                        <outlet property="ReplayButton" destination="ctg-QD-2YN" id="sgB-nh-S6q"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="394" y="-309"/>
         </scene>
-        <!--Middle Level Interface Controller-->
+        <!--MiddleGame-->
         <scene sceneID="vkE-iC-4Xc">
             <objects>
-                <controller id="Vi9-vl-8iG" customClass="MiddleLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
+                <controller identifier="MiddleGame" id="Vi9-vl-8iG" customClass="MiddleLevelInterfaceController" customModule="testWatch0_1_WatchKit_Extension">
                     <items>
                         <label width="1" height="58" alignment="left" text="2 + 2 / 2 = 3?" textAlignment="center" id="d45-kz-OBo">
                             <fontDescription key="font" type="system" pointSize="26"/>
@@ -249,7 +247,4 @@
             <point key="canvasLocation" x="414" y="395"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="xt0-CC-ppn"/>
-    </inferredMetricsTieBreakers>
 </document>

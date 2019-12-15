@@ -14,6 +14,7 @@ class EasyLevelInterfaceController: WKInterfaceController {
     
     var level: Level = Level(mode: 1)
     var score: Int = 0
+    var sendContextArr: [String] = ["", "0"]
     
     @IBOutlet weak var EasyTask: WKInterfaceLabel!
     @IBOutlet weak var EasyScore: WKInterfaceLabel!
@@ -24,7 +25,8 @@ class EasyLevelInterfaceController: WKInterfaceController {
             EasyScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
+            sendContextArr[0] = String(score)
+            pushController(withName: "EndScreen", context: sendContextArr)
             score = 0
             EasyScore.setText("score: \(score)")
         }
@@ -39,7 +41,8 @@ class EasyLevelInterfaceController: WKInterfaceController {
             EasyScore.setText("score: \(score)")
         }
         else{
-            pushController(withName: "EndScreen", context: String(score))
+            sendContextArr[0] = String(score)
+            pushController(withName: "EndScreen", context: sendContextArr)
             score = 0
             EasyScore.setText("score: \(score)")
         }
